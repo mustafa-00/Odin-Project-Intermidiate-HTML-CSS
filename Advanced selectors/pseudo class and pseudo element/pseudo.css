@@ -1,0 +1,84 @@
+
+
+/* ------------------------------------------------ */
+/* pseudo clasess--------------------------------- */
+/* ---------------------------------------------- */
+
+:root{
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+/* article p:first-child{}  --------------  this one will do the same as above */ 
+.group > p:first-child {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/* article >p:last-child:hover{color: aqua;}---------this one will do the same as above */
+
+.second:hover{
+    background: aqua;
+    cursor: pointer;
+}
+
+article a:active {
+    color: yellow;
+    background: black;
+}
+
+article textarea:focus {
+    background: yellow;
+}
+article textarea{
+    display: block;
+}
+
+
+.third{
+    background-color: white;
+    padding: 10px;
+}
+.third:hover{
+    color:darksalmon;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* --------------------------------------------- */
+/* pseudo elements----------------------------- */
+/* ------------------------------------------- */
+
+.collection > p::first-line{
+    font-size: 30px;
+    font-weight: 30px;
+}
+.collection{
+    padding: 2px;
+    background-color: bisque;
+}
+
+.collection + p + p::first-letter{
+    color: aqua;
+}
+
+/* Combining pseudo-classes and pseudo-elements */
+
+.collection p:first-child::first-line{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: brown;
+}
+
+/* ::before and ::after element */
+.box::before{
+    content: "This should show before the other content.";
+}
+
+.box::after{
+    content: "->";
+}
+
+

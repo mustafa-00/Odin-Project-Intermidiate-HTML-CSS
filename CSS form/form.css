@@ -1,0 +1,106 @@
+:root{
+    --text-color: rgb(154, 28, 28);
+    --font-weigh: bold;
+    --bg-color: rgb(19, 105, 136);
+}
+
+#form{
+    color: black;
+    font-weight: var(--font-weigh);
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.form-group label {
+    width: 100px;
+    text-align: left;
+}
+
+form input{
+    border-radius: 5px;
+    border-style: hidden;
+    padding: 8px;
+    /* margin-bottom: 5px; */
+    /* margin-top: 5px; */
+    flex: 1;
+}
+
+.radio{
+    background-color: rgb(34, 137, 227);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+textarea{
+    border-radius: 10px;
+}
+
+.checkbox{
+    background-color: rosybrown;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.button{
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+button{
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    border-style: hidden;
+    padding: 8px;
+}
+
+#submit:hover{
+    background-color: rgb(49, 197, 49);
+    transition: 0.4s ease-in-out;
+    color: black;
+}
+
+#reset:hover{
+    background-color: rgb(199, 44, 44);
+    transition: 0.4s ease-in-out;
+}
+
+#Toggle:hover{
+    background-color: deepskyblue;
+    transition: 0.4s ease-in-out;
+    color: black;
+}
+
+fieldset{
+    font-weight: var(--font-weigh);
+    /* background-color: var(--bg-color); */
+    border-radius: 20px;
+    /* border-style: unset; */
+    padding: 15px;
+    margin-top: 20px;
+}
+
+fieldset input{
+    accent-color: purple;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+
+/* we have declared our variables inside the root so we can access
+them anywhere in our html page.*/
+
+/* for declaring variables we use the "--" and then variable name
+and finally our variable value.*/
+
+
+:root{
+    --text-color: red;
+    --button: solid 3px red;
+    --font-style:'Courier New', Courier, monospace;
+}
+
+
+.three-coulmn  div{
+    display: inline-block;
+}
+
+.header{
+    color: var(--text-color);
+}
+
+.subHeader{
+    font-family: var(--font-style);
+    --font-color: rgb(46, 149, 196);
+    color: var(--font-color);
+}
+
+/* Also we can add to parameters for our variable, in case the first parameter do not exist
+the second parameter will work */
+
+.paragraph{
+    color: var(--font-color, rgb(141, 72, 194));
+}
+
+
+.button{
+    border: var(--button);
+    background-color: blue;
+    color: white;
+    transform: black 1s ease, transform 1s ease;
+}
+
+.button:hover{
+    background-color: black;
+    transform: scale(1.1);
+}

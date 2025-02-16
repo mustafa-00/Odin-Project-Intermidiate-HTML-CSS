@@ -1,0 +1,36 @@
+:root{
+    --bg-color: rgb(222, 213, 213);
+}
+
+.speaker-form-header{
+    background-color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.speaker-form{
+    background-color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.form-row{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.radio{
+    margin-left: 60px;
+}
+
+.drop_down{
+    margin-left: -65px;
+}

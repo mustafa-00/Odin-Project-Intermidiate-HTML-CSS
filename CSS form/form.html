@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form">
+        <!-- Labels
+        Labels accept a for attribute, which associates it with a particular input.
+        The input we want to associate with a label needs an id attribute with the same value as the label’s for attribute. -->
+
+
+        <!-- Placeholder attribute
+        To guide users on what to enter in form elements, we can include placeholder text in input fields.
+        This is done by adding a placeholder attribute to an input.
+        The value will be the placeholder text we want to display in the input: -->
+
+        <!-- The name attribute
+        We need to use labels so that users understand what the data entered into an input field will represent.
+        Just like that, we also need to let the backend, where we send our data, know what each piece of data represents.
+        We do this by adding a name attribute to our inputs: -->
+        <form id="form" action="#" method="post">
+            <div class="form-group">
+                <label for="firs_name">First Name:</label>
+                <input type="text" id="firs_name" placeholder="Enter your Name only!" name="firs_name">
+            </div>
+            <div class="form-group">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email only!">
+            </div>
+            <div class="form-group">
+                <label for="user_password">Password:</label>
+                <input type="password" id="user_password" name="password" placeholder="Enter your password only!">
+            </div>
+            <div class="form-group">
+                <label for="amount">number:</label>
+                <input type="number" id="amount" name="amount">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <textarea name="textarea" id="textarea" rows="5" cols="40">Some initial text!</textarea>
+
+            <!-- Select dropdown -->
+            <!-- To create a select dropdown, we use the <select> element.
+            Any options we want to display within the select element are defined using <option> elements: -->
+            <select name="Car" id="car">
+                <option value="mercedes">mercedes</option>
+                <option value="tesla">tesla</option>
+                <option value="BMW">BMW</option>
+                <option value="ford">ford</option>
+                <option value="volvo">volvo</option>
+                <option value="TOYOTA">TOYOTA</option>
+            </select>
+    
+            <!-- We can set one of the options to be the default selected element
+            when the browser first renders the form by giving one of the options the selected attribute: -->
+            <select name="Car" id="car">
+                <option value="mercedes">mercedes</option>
+                <option value="tesla">tesla</option>
+                <option value="BMW" selected>BMW</option>
+                <option value="ford">ford</option>
+                <option value="volvo">volvo</option>
+                <option value="TOYOTA">TOYOTA</option>
+            </select>
+    
+            <!-- We may also split the list of options into groups using the <optgroup> element. 
+            The optgroup element takes a label attribute which the browser uses as the label for each group: -->
+            <select name="fashtion" id="fashion">
+                <optgroup label="clothing">
+                    <option value="t_shirt">t_shirt</option>
+                    <option value="pants">pants</option>
+                    <option value="coats">coats</option>
+                    <option value="coats">coats</option>
+                </optgroup>
+                <optgroup label="foot wear">
+                    <option value="sneakers">sneakers</option>
+                    <option value="boots">boots</option>
+                    <option value="sandals">sandals</option>
+                </optgroup>
+            </select>
+        </form>
+    </div>
+    
+    <!-- Radio button -->
+    <!-- In this case, we can use radio buttons. Radio buttons allow us to create multiple options that the user can choose one of.
+    To create radio buttons, we use the ever adaptable input element again with a type attribute of “radio”: -->
+
+    <!-- When we select one of the radio buttons and then select another, it will deselect the first one.
+    Radio buttons know to do this because they have the same name attribute. -->
+    <div class="radio">
+        <div class="single_choice">
+            <h1>single_choice</h1>
+            <div>
+                <label for="child">Child</label>
+                <input type="radio" id="child" name="ticket_type" value="child">
+            </div>
+    
+            <div>
+                <label for="adult">Adult</label>
+                <input type="radio" id="adult" name="ticket_type" value="adult">
+            </div>
+    
+            <div>
+                <label for="senior">Senior</label>
+                <input type="radio" id="senior" value="senior" name="ticket_type">
+            </div>
+        </div>
+    
+        <div class="multi_choice">
+            <h1>multi_choice</h1>
+            <div>
+                <label for="cat">cat</label>
+                <input type="radio" id="cat" name="cat" value="cat">
+            </div>
+    
+            <div>
+                <label for="dog">dog</label>
+                <input type="radio" id="dog" name="dog" value="dog">
+            </div>
+    
+            <div>
+                <label for="rabit">rabit</label>
+                <input type="radio" id="rabit" name="rabit" value="rabit">
+            </div>
+        </div>
+    </div>
+
+    <!-- checkboxes -->
+    <!-- Checkboxes are similar to radio buttons in that they allow users to choose from a set of predefined options.
+    But unlike radio buttons, they allow multiple options to be selected at once.
+    To create a checkbox, we use the input element with a type attribute of “checkbox”: -->
+    <div class="checkbox">
+        <h1>pizza toppings</h1>
+        <label for="sausage">sausage</label>
+        <input type="checkbox" id="sausage" name="topping" value="sausage">
+        <label for="onion">onion</label>
+        <input type="checkbox" id="onion" name="topping" value="onion">
+        <label for="pepperoni">pepperoni</label>
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+        <label for="mashrooms">mashrooms</label>
+        <input type="checkbox" id="mashrooms" name="topping" value="mashrooms">
+    </div>
+
+    <!-- Buttons -->
+    <!-- The button element creates clickable buttons that the user can interact with to submit forms and trigger other actions.
+    To create a button, we use the <button> element. 
+    The content or text we want to have displayed inside the button will go within the opening and closing tags: -->
+    <div class="button">
+        <!-- submit button -->
+        <!-- Once a user is finished filling in a form, they will need a way to submit it.
+        There is a specialized button for this; the submit button. When a submit button is clicked,
+        it will submit the form it is contained within. The type attribute has a value of submit by default, i.e. if the type is not specified or the value provided is invalid.
+        To create a submit button, we use the button element with a type attribute of “submit”: -->
+        <button id="submit" type="submit">submit</button>
+
+        <!-- Reset button -->
+        <!-- A reset button clears all the data the user has entered into the form and sets all the inputs in the form back to what they were initially.
+        To create a reset button, we use the button element with a type attribute of “reset”: -->
+        <button id="reset" type="reset">reset</button>
+
+        <!-- Generic button -->
+        <!-- The third and final button type is a generic button that can be used for anything. It’s commonly used with JS for creating interactive UI’s.
+        To create a generic button, we use the button element with a type attribute of “button”: -->
+        <button id="Toggle" type="button">Click to Toggle</button>
+    </div>
+
+
+    <!-- fieldset element -->
+    <!-- The fieldset element is a container element that allows us to group related form inputs into one logical unit.
+    To create a fieldset, we use the <fieldset> element. Whatever form inputs we want to group together go within the opening and closing fieldset tags: -->
+    <fieldset>
+        <label for="firs_name">First Name:</label>
+        <input type="text" id="firs_name" name="firs_name">
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+    </fieldset>
+
+
+    <!-- Legend -->
+    <!-- The legend element is used to give field sets a heading or caption so the user can see what a grouping of inputs is for.
+    To create a legend, we use the <legend> element with the text we want to display within its opening and closing tags.
+    A legend should always come right after an opening fieldset tag: -->
+    <fieldset>
+        <legend>Contact Details</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name only!">
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="text" id="phone_number" name="phone_number" placeholder="Enter phone_number only!">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email only!">
+    </fieldset>
+
+    <fieldset>
+        <legend>Delivery Details</legend>
+
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address" placeholder="Enter your street address only!">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city only!">
+
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" placeholder="Enter your zip_code only!">
+    </fieldset>
+
+    <fieldset>
+        <legend>What would you like to drink?</legend>
+
+        <div>
+            <label for="coffee">Coffee</label>
+            <input type="radio" id="coffee" name="drink" value="coffee">
+        </div>
+
+        <div>
+            <label for="tea">Tea</label>
+            <input type="radio" id="tea" name="drink" value="tea">
+        </div>
+
+        <div>
+            <label for="soda">Soda</label>
+            <input type="radio" id="soda" name="drink" value="soda">
+        </div>
+    </fieldset>
+
+</body>
+</html>
