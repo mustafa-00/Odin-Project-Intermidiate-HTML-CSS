@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="validation.css">
 </head>
 <body>
+    <!-- requierd validation start -->
     <form action="#" method="get">
         <div>
             <label for="user_email">*Email:</label>
@@ -21,6 +22,36 @@
 
         <button type="submit">Login</button>
     </form>
+    <!-- requierd validation end -->
+
+
+    <!-- Minimum length validation start -->
+    <!-- Try entering less than three characters into the text area and clicking the post button to see the validation in action. -->
+     <form action="#" method="get">
+        <div>
+            <textarea placeholder="Minimum length is 2" minlength="2"></textarea>
+            <br>
+            <button type="submit">Tweet</button>
+        </div>
+     </form>
+    <!-- Minimum length validation end -->
+
+
+    <!-- Maximum length validation start -->
+    <!-- With the maximum length validation, the browser will prevent users from entering more characters than the max length attribute value. Try this for yourself in the example above. -->
+    <form action="#" method="get">
+        <div>
+            <textarea placeholder="Maximum length is 10" maxlength="10"></textarea>
+            <br>
+            <button type="submit">Tweet</button>
+        </div>
+    </form>
+    <!-- Maximum length validation end -->
+
+
+    
+
+
     
 </body>
 </html>
