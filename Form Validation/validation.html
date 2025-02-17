@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation</title>
     <link rel="stylesheet" href="validation.css">
+    <style>
+        *{
+            line-height: 20px;
+        }
+
+        form{
+            margin-top: 45px;
+        }
+    </style>
 </head>
 <body>
     <!-- requierd validation start -->
@@ -62,18 +71,27 @@
 
     <!-- Number range validations start -->
     <form action="#" method="get">
-        <div>
-            <label for="quantity">Quantity</label>
+        <div class="number">
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="4" value="0">
+            </div>
+            <div>
+                <button type="submit">Place Order</button>
+            </div>
         </div>
-            <input type="number" id="quantity" name="quantity" min="1" max="4" value="0">
-        <div>
-            <button type="submit">Place Order</button>
+
+        <div class="date">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" max="2025-2-17">
+            <br>
+            <button type="submit">Enter</button>
         </div>
     </form>
     <!-- Number range validations end -->
 
 
-    
+
     
 
 
