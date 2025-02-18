@@ -1,7 +1,12 @@
 *{
-    margin: 0px;
-    /* box-sizing: border-box; */
-    
+    margin: 0px;    
+}
+
+@font-face {
+    font-family: 'NorseBold';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
@@ -21,5 +26,19 @@ body{
 
 .header{
     margin-top: 100px;
+}
+
+.odin{
+    position: relative;
+    top: 200px;
+    background-color: black;
+    opacity: 0.4;
+    color: white;
+    width: 550px;
+    text-align: center;
+}
+
+.odin img{
+    width: 100px;
 }
 
