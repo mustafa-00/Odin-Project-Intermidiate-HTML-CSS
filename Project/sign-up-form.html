@@ -17,37 +17,26 @@
         <br>
     
         <form method="get" action="#">
-            <h3>Lets do this!</h3>
-            <div class="name">
-                <label for="first_name">Name:</label>
-                <input type="text" id="first_name" name="name" placeholder="Enter your name only!">
-            </div>
-    
-            <div class="last-name">
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last-name" placeholder="Enter your last-name only!">
-            </div>
-    
-            <div class="email">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email only!">
-            </div>
-    
-            <div class="phone">
-                <label for="phone_number">Phone-Number:</label>
-                <input type="number" id="phone_number" name="phone_number" placeholder="Enter your phone number only!">
-            </div>
-    
-            <div class="password">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-            </div>
-    
-            <div class="confirm-password">
-                <label for="confirm_password">confirm-password</label>
-                <input type="password" id="confirm_password" name="confirm-password">
-            </div>
+            <h2>Register</h2>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="button">
             <div class="button">
                 <button type="submit">Creat Account</button>
             </div>
@@ -55,7 +44,7 @@
             <div class="paragraph">
                 <p>Already have an account? <a href="#">Login</a> </p>
             </div>
-        </form>
+        </div>
     </div>
 
     <div class="odin">
