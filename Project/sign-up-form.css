@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    --font-capitalized: capitalize;
+}
+
+img{
+    /* position: relative; */
+    width: 100%;
+}
