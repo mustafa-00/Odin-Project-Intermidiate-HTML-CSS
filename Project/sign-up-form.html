@@ -16,35 +16,42 @@
         <br>
         <br>
     
-        <form method="get" action="#">
+        <form method="post" action="#">
             <h2>Register</h2>
-            <label for="name">First Name:</label>
-            <input type="text" id="name" name="name" required>
+            <div>
+                <label for="name">First Name</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            
+            <div class="email-phone">
+                <label for="email">Email</label>
+                 <input type="email" id="email" name="email" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                 <label for="phone">Phone Number</label>
+                 <input type="number" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                <label for="confirm-password">Confirm-Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Submit</button>
+            <div id="button">
+                <div class="button">
+                    <button type="submit">Creat Account</button>
+                </div>
+    
+                <div class="paragraph">
+                    <p>Already have an account? <a href="#">Login</a> </p>
+                </div>
+            </div>
         </form>
-
-        <div id="button">
-            <div class="button">
-                <button type="submit">Creat Account</button>
-            </div>
-
-            <div class="paragraph">
-                <p>Already have an account? <a href="#">Login</a> </p>
-            </div>
-        </div>
     </div>
 
     <div class="odin">
