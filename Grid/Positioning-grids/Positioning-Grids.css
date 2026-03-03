@@ -16,3 +16,29 @@
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
+#kitchen{
+    grid-column: 4  /  6;
+    grid-row: 3  /  6;
+}
+
+#bathroom{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+#bedroom{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#garage{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
