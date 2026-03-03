@@ -1,6 +1,6 @@
 .container{
     display: inline-grid;
-    grid-template: 40px 40px 40px 40px 40px /40px 40px 40px 40px 40px;
+    grid-template: 40px 40px 40px 40px 40px 40px /40px 40px 40px 40px 40px 40px;
     background-color: lightskyblue;
 }
 
@@ -12,33 +12,33 @@
 
 #living-room{
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
 #kitchen{
-    grid-column: 4  /  6;
-    grid-row: 3  /  6;
+    grid-column: 5  /  7;
+    grid-row: 3  /  7;
 }
 
 #bathroom{
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-end: 7;
 }
 
 #bedroom{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 6;
 }
 
 #garage{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
 }
