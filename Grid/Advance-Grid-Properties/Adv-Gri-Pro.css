@@ -1,8 +1,17 @@
 .container{
     background-color: lightblue;
     display: grid;
+    gap: 5px;
+    resize: both;
+    overflow: auto;
     /* grid-template-columns: 50px 50px;
     grid-template-rows: 50px 50px 50px 50px; */
     grid-template-columns: repeat(2 , 50px);
     grid-template-rows: repeat(5 , 50px);
+}
+
+.item{
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 12px;
 }
