@@ -6,12 +6,11 @@
     overflow: auto;
     /* grid-template-columns: 50px 50px;
     grid-template-rows: 50px 50px 50px 50px; */
-    grid-template-columns: repeat(2 , 50px);
-    grid-template-rows: repeat(5 , 50px);
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(5 , 1fr);
 }
 
 .item{
     border: 1px solid black;
     text-align: center;
-    padding-top: 12px;
 }
