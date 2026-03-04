@@ -1,6 +1,9 @@
 .container{
     display: inline-grid;
-    grid-template: 40px 40px 40px 40px 40px 40px /40px 40px 40px 40px 40px 40px;
+    /* grid-template: 40px 40px 40px 40px 40px 40px /40px 40px 40px 40px 40px 40px; */
+    
+    /* Also there is a short way to do this by doing the repeat function as below:*/
+    grid-template: repeat(6,40px) / repeat(6,40px);
     background-color: lightskyblue;
 }
 
