@@ -1,4 +1,3 @@
-.header{
-    display: flex;
-    font-size: small;
+body{
+    display: grid;
 }
