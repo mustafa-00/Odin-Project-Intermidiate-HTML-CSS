@@ -8,11 +8,15 @@ body{
 .sidebar{
     background-color: rgb(60, 138, 234);
     color: #fff;
-    padding: 10px;
 }
 
 .sidebar-elements{
     list-style-type: none;
     display: grid;
     gap: 10px;
+    grid-template-rows: 50px auto auto auto 50px;
+}
+
+#dashboard{
+    font-size: 150%;
 }
