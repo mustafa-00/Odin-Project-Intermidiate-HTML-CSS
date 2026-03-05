@@ -1,13 +1,13 @@
 .container{
     display: grid;
-    grid-template-columns: repeat(4,250px);
-    grid-template-rows: repeat(3,250px);
+    grid-template-columns: repeat(10,200px);
+    grid-template-rows: repeat(13,50px);
 }
 .sidebar{
     background-color: rgb(60, 138, 234);
     color: #fff;
-    grid-column: 1 / 1;
-    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    grid-row: 1 / 13;
 }
 
 .sidebar-elements{
@@ -21,3 +21,13 @@
 #dashboard{
     font-size: 150%;
 }
+
+/* Header section------------------------ */
+
+.header{
+    background-color: red;
+    color: black;
+    grid-column: 2 / 5;
+    grid-row: 1 / 4;
+}
+
