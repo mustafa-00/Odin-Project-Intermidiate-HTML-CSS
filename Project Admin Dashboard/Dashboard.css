@@ -31,3 +31,8 @@
     grid-row: 1 / 4;
 }
 
+.header-elements{
+    display: inline-flex;
+    gap: 50px;
+}
+
